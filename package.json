@@ -1,0 +1,33 @@
+{
+  "name": "expressmongoapi",
+  "version": "1.0.0",
+  "description": "API example with NodeJS, Express and Mongo",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run launch",
+    "launch": "node build/index.js",
+    "build": "./node_modules/.bin/babel src/ --out-dir build/",
+    "build:watch": "./node_modules/.bin/babel --watch src/ --out-dir build/",
+    "dev": "babel-watch src/index.js"
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "body-parser": "^1.17.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "method-override": "^2.3.10",
+    "mongoose": "^4.9.7",
+    "nodemon": "^1.17.1",
+    "path": "^0.12.7",
+    "twig": "^1.10.5",
+    "validator": "^9.4.1"
+  },
+  "devDependencies": {
+    "babel-watch": "^2.0.7",
+    "faker": "^4.1.0"
+  },
+  "author": "Poch",
+  "license": "ISC"
+}
