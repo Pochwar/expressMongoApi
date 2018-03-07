@@ -1,4 +1,4 @@
-# Express Mongo Api :sparkles:
+# :sparkles: Express Mongo Api :sparkles:
 
 Express Mongo Api is a project to test making a small API example with NodeJS, Express and MongoDB and trying to apply an MVC architecture.
 
@@ -20,7 +20,7 @@ coming soon
 
 ## TODO
 
-* [] Write development section :memo:
+* [ ] Write development section :memo:
 * [x] Make service to validate forms with validator plugin
 * [ ] encrypt password
 * [ ] Make an authentication system
