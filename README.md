@@ -20,9 +20,9 @@ coming soon
 
 ## TODO
 
-* Make service to validate forms with validator plugin (WIP)
-* encrypt password
-* Make an authentication system
-* Handle internationalisation
-* Handle mongo connection depending on user's infos instead of environment
-* add fakes users with faker
+* [x] Make service to validate forms with validator plugin
+* [ ] encrypt password
+* [ ] Make an authentication system
+* [ ] Handle internationalisation
+* [x] Handle mongo connection depending on user's infos instead of environment
+* [ ] add fakes users with faker

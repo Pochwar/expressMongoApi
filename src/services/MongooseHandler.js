@@ -1,4 +1,5 @@
-import Mongoose from "mongoose";
+import Mongoose from "mongoose"
+import _ from 'lodash'
 
 import { ENV, DEBUG, DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME } from "config"
 
@@ -13,14 +14,12 @@ export default class mongooseHandler {
   connect() {
     return new Promise((resolve, reject) => {
       Mongoose.Promise = global.Promise;
-      let dbConnect;
-      if(ENV === 'production') {
-        dbConnect = `mongodb://${ DB_USER }:${ DB_PASSWORD }@${ DB_HOST }:${ DB_PORT }/${ DB_NAME }`
-      } else {
-        dbConnect = `mongodb://${ DB_HOST }:${ DB_PORT }/${ DB_NAME }`
+      let dbCredentials = '';
+      if(!_.isEmpty(DB_USER)) {
+        dbCredentials = DB_USER + ':' + DB_PASSWORD + '@'
       }
       this.mongoose.connect(
-        dbConnect,
+        `mongodb://${dbCredentials}${ DB_HOST }:${ DB_PORT }/${ DB_NAME }`,
         {
           keepAlive: true,
           reconnectTries: Number.MAX_VALUE,
