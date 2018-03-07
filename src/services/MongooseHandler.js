@@ -1,6 +1,6 @@
 import Mongoose from "mongoose";
 
-import { ENV, DEBUG, DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME } from "../config"
+import { ENV, DEBUG, DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME } from "config"
 
 export default class mongooseHandler {
   constructor() {

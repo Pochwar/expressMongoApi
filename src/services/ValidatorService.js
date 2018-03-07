@@ -1,4 +1,4 @@
-import Rules from '../rules/Rules'
+import Rules from 'rules/Rules'
 
 export default class ValidatorService {
   storeUser(req, res, next) {

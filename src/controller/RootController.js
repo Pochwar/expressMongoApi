@@ -1,4 +1,4 @@
-import HttpStatusService from "../services/HttpStatusService";
+import HttpStatusService from "services/HttpStatusService";
 
 export default class RootController {
 

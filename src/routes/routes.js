@@ -1,7 +1,7 @@
-import RootController from '../controller/RootController'
-import UserController from '../controller/UserController'
+import RootController from 'controller/RootController'
+import UserController from 'controller/UserController'
 
-import Validator from '../services/ValidatorService'
+import Validator from 'services/ValidatorService'
 
 export default class Routes {
   constructor(app) {

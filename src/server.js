@@ -3,10 +3,10 @@ import express from 'express';
 import methodOverride from 'method-override';
 import bodyParser from 'body-parser';
 
-import Routes from './routes/routes'
-import MethodOverrideService from './services/MethodOverrideService'
+import Routes from 'routes/routes'
+import MethodOverrideService from 'services/MethodOverrideService'
 
-import { PORT } from './config'
+import { PORT } from 'config'
 
 export default class Server {
   constructor() {

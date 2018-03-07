@@ -1,5 +1,5 @@
-import MongooseHandler from "./services/MongooseHandler";
-import Server from "./server";
+import MongooseHandler from "services/MongooseHandler";
+import Server from "server";
 
 const server = new Server();
 

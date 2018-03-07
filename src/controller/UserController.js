@@ -1,5 +1,5 @@
-import UserRepository from "../repository/UserRepository";
-import HttpStatusService from "../services/HttpStatusService";
+import UserRepository from "repository/UserRepository";
+import HttpStatusService from "services/HttpStatusService";
 
 export default class UserController {
   constructor() {

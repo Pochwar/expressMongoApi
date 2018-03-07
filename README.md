@@ -24,4 +24,5 @@ coming soon
 * encrypt password
 * Make an authentication system
 * Handle internationalisation
-
+* Handle mongo connection depending on user's infos instead of environment
+* add fakes users with faker
