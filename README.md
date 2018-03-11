@@ -26,4 +26,4 @@ coming soon
 * [ ] Make an authentication system
 * [ ] Handle internationalisation
 * [x] Handle mongo connection depending on user's infos instead of environment
-* [ ] add fakes users with faker
+* [x] add fakes users with faker
