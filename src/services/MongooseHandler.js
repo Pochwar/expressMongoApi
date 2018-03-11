@@ -34,4 +34,8 @@ export default class mongooseHandler {
       );
     });
   }
+
+  disconnect() {
+    this.mongoose.connection.close()
+  }
 }
