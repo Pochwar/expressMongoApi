@@ -1,15 +1,17 @@
-import UserModel from "models/UserModel";
+import UserModel from "models/UserModel"
+
+import bcrypt from 'bcrypt'
 
 export default class UserRepository {
   constructor() {
-    this.userModel = UserModel;
+    this.userModel = UserModel
   }
 
   getUsers() {
     return new Promise((resolve, reject) => {
       this.userModel.find({})
         .then(kittens => resolve(kittens))
-        .catch(err => reject(err));
+        .catch(err => reject(err))
     });
   }
 
@@ -23,13 +25,16 @@ export default class UserRepository {
 
   storeUser(data) {
     return new Promise((resolve, reject) => {
-      this.userModel.create({
-        name: data.name,
-        email: data.email,
-        password: data.password
+      bcrypt.hash(data.password, 10)
+        .then(hash => {
+          this.userModel.create({
+            name: data.name,
+            email: data.email,
+            password: hash
+          })
+            .then(user => resolve(user))
+            .catch(err => reject(err))
       })
-        .then(user => resolve(user))
-        .catch(err => reject(err));
     });
   }
 

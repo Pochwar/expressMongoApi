@@ -5,3 +5,4 @@ build
 #files
 .idea
 .env
+yarn-error.log

@@ -22,7 +22,7 @@ coming soon
 
 * [ ] Write development section :memo:
 * [x] Make service to validate forms with validator plugin
-* [ ] encrypt password
+* [x] encrypt password
 * [ ] Make an authentication system
 * [ ] Handle internationalisation
 * [x] Handle mongo connection depending on user's infos instead of environment
