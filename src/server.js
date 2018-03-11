@@ -2,6 +2,7 @@ import path from 'path';
 import express from 'express';
 import methodOverride from 'method-override';
 import bodyParser from 'body-parser';
+import i18n from 'i18n'
 
 import Routes from 'routes/routes'
 import MethodOverrideService from 'services/MethodOverrideService'
@@ -27,6 +28,16 @@ export default class Server {
     // set twig engine for templating and set views directory
     this._app.set('view engine', 'twig');
     this._app.set('views', path.join(__dirname, '../src/views/'));
+
+    //configure i18n
+    i18n.configure({
+      locales: ['fr', 'en'],
+      defaultLocale: 'ge',
+      directory: path.join(__dirname, '../src/locales/')
+    })
+
+    //use i18n
+    this._app.use(i18n.init);
 
     // set app port
     this.port = PORT || 3000;

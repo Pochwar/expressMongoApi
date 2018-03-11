@@ -24,6 +24,6 @@ coming soon
 * [x] Make service to validate forms with validator plugin
 * [x] encrypt password
 * [ ] Make an authentication system
-* [ ] Handle internationalisation
+* [ ] Handle internationalisation (WIP)
 * [x] Handle mongo connection depending on user's infos instead of environment
 * [x] add fakes users with faker
